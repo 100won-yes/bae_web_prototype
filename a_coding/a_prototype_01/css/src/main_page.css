@@ -34,16 +34,16 @@
 /* #mainAdBox ==================================================== */
 
 #mainAdBox {width:auto; height:760px; background-color:#aaa;}
-  .move_button_box {
+  .indicator_box {
     margin:auto; margin-top:696px;
     width:170px; height:26px;
   }
-  .move_button_box li {
+  .indicator_box li {
     float:left; margin-right:10px;
     border-radius:100%;
     width:26px; height:26px; background-color:#ffb;
   }
-  .move_button_box li:last-child {margin:0;}
+  .indicator_box li:last-child {margin:0;}
 
 /* #menuBox ====================================================== */
 
