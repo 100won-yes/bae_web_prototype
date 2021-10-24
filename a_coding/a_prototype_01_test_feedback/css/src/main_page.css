@@ -1,0 +1,551 @@
+@charset "UTF-8";
+/* main_page.css */
+
+:root {
+  color: #363636;
+}
+
+/* common */
+.full {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(51, 51, 51, 0.1);
+}
+
+#wrap {
+  width: auto;
+  height: auto;
+}
+
+/* #headBox ===================================================== */
+
+#headBox {
+  position: relative;
+  padding-top: 25px;
+  width: auto;
+  height: 140px;
+  background-color: #363636;
+}
+
+.logo_area {
+  /* float: left; */
+  position: absolute;
+  /* margin: 0 265px; */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 320px;
+  height: 90px;
+  margin: auto;
+  padding: 5px;
+  box-sizing: border-box;
+}
+.logo_area > a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.logo_area img {
+  width: 100%;
+  height: auto;
+}
+
+.head_inner {
+  margin: auto;
+  width: 1090px;
+  height: 90px;
+}
+.menu_navigation {
+  float: left;
+  margin-top: 25px;
+  /* width: 120px; */
+  width: 100%;
+  /* height: 40px; */
+  height: 5px;
+  background-color: #fa0;
+}
+/* .menu_navigation > a {
+  display: block;
+  width: 100%;
+  height: 100%;
+} */
+/* .menu_navigation h2 {
+  line-height: 40px;
+  text-align: center;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  color: #fff;
+  width: auto;
+  height: 100%;
+} */
+
+.menu_navigation .nav_btn {
+  float: left;
+  width: 40px;
+  height: 40px;
+}
+.nav_btn button {
+  width: 100%;
+  height: 100%;
+}
+.menu_navigation i {
+  display: block;
+  margin: 0;
+  float: left;
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+}
+
+.login_area {
+  float: right;
+  width: 120px;
+  height: 40px;
+}
+.login_area > a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  line-height: 40px;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  color: #fff;
+  word-spacing: -6px;
+}
+
+.login_area i {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  margin-right: 5px;
+  background-color: #fff;
+}
+
+/* #mainAdBox ==================================================== */
+
+#mainAdBox {
+  position: relative;
+  margin: auto;
+  width: auto;
+  height: 760px;
+  background-color: #fdb;
+}
+.indicator_box {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  /* margin-top: 696px; */
+  width: 170px;
+  height: 26px;
+}
+.indicator_box li {
+  float: left;
+  margin-right: 10px;
+  border-radius: 100%;
+  width: 26px;
+  height: 26px;
+  background-color: #363636;
+}
+.indicator_box li:hover {
+  background-color: #fad000;
+}
+.indicator_box li:last-child {
+  margin: 0;
+}
+
+/* #menuBox ====================================================== */
+
+#menuBox {
+  padding: 90px 170px;
+  margin: auto;
+  width: 1280px;
+  height: 760px;
+  background-color: #fff;
+}
+.menu_inner {
+  width: 940px;
+  height: 580px;
+}
+.menu_inner li {
+  float: left;
+}
+.menu_inner li > div {
+  width: 100%;
+  height: 100%;
+}
+.menu_inner a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.menu_inner a div {
+  padding: 50px 45px;
+  box-shadow: 5px 5px 5px;
+  width: 100%;
+  height: 100%;
+  background-color: #fdb;
+}
+.menu_inner h3 {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+.brandstory {
+  margin-bottom: 20px;
+  margin-right: 20px;
+  width: 300px;
+  height: 280px;
+}
+.brandstory_box {
+  width: 100%;
+  height: 100%;
+}
+
+.menu {
+  margin-bottom: 20px;
+  width: 620px;
+  height: 280px;
+}
+.franchise {
+  margin-right: 20px;
+  width: 300px;
+  height: 280px;
+}
+.store {
+  margin-right: 20px;
+  width: 300px;
+  height: 280px;
+}
+.news {
+  width: 300px;
+  height: 280px;
+}
+/* #newproductBox ================================================= */
+
+#newproductBox {
+  width: auto;
+  height: 600px;
+  background-color: #fdb;
+}
+.newproduct_area {
+  margin: auto;
+  margin-top: 144px;
+  width: 240px;
+  height: 320px;
+}
+.newproduct_title {
+  text-align: center;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  width: 240px;
+  height: 60px;
+}
+.newproduct_text {
+  text-align: center;
+  font-size: 1.5rem;
+  margin: 45px 0;
+  width: 240px;
+  height: 110px;
+}
+.newproduct_area > div {
+  margin: auto;
+  width: 140px;
+  height: 60px;
+}
+.newproduct_area button {
+  display: block;
+  font-size: 1.25rem;
+  color: #fff;
+  width: 100%;
+  height: 100%;
+  background-color: #363636;
+  border-radius: 10px;
+}
+.newproduct_area button:hover {
+  color: #363636;
+  background-color: #fff;
+}
+
+/* #introductionBox ================================================= */
+
+#introductionBox {
+  position: relative;
+  margin: auto;
+  padding: 50px 0;
+  width: auto;
+  height: 600px;
+  background-color: #fad000;
+}
+.introduction_inner {
+  position: relative;
+  left: calc(50% - 1520px);
+  overflow: hidden;
+  margin: auto;
+  width: 3040px;
+  height: 500px;
+}
+.introduction_inner > div {
+  float: left;
+  box-shadow: 5px 5px 5px;
+  width: 1000px;
+  height: 500px;
+  background-color: #fdb;
+}
+.introduction_main {
+  margin: 0 20px;
+}
+
+.introduction_btn_box {
+  position: absolute;
+  top: calc(50% - 30px);
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 1000px;
+  /* height: 60px; */
+  height: 0;
+}
+.introduction_btn_box > div {
+  width: 60px;
+  /* height: 100%; */
+  height: 60px;
+  padding: 25px;
+  box-sizing: content-box;
+}
+.introduction_btn_box button {
+  width: 100%;
+  height: 100%;
+  background-color: #ffb;
+}
+.introduction_left_button {
+  float: left;
+}
+.introduction_right_button {
+  float: right;
+}
+
+/* #subAdBox_01 ===================================================== */
+
+#subAdBox_01 {
+  padding: 30px 0;
+  margin: auto;
+  width: auto;
+  height: 360px;
+  background-color: #e3e3e3;
+}
+.sub_inner_01 {
+  margin: auto;
+  width: 1200px;
+  height: 300px;
+  background-color: #fdb;
+}
+
+/* #subAdBox_02 ===================================================== */
+
+#subAdBox_02 {
+  padding: 50px 0;
+  width: auto;
+  height: 360px;
+  background-color: #fdb;
+}
+.sub_inner_02 {
+  margin: auto;
+  width: 240px;
+  height: 260px;
+}
+.sub_02_title {
+  margin: auto;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  text-align: center;
+  width: 200px;
+  height: 60px;
+}
+.sub_02_text {
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 15px 0;
+  width: 240px;
+  height: 110px;
+}
+.sub_02_area > div {
+  margin: auto;
+  width: 140px;
+  height: 60px;
+}
+.sub_02_area button {
+  display: block;
+  font-size: 1.25rem;
+  color: #fff;
+  width: 100%;
+  height: 100%;
+  background-color: #363636;
+  border-radius: 10px;
+}
+.sub_02_area button:hover {
+  color: #363636;
+  background-color: #fff;
+}
+
+/* #subAdBox_03 ===================================================== */
+
+#subAdBox_03 {
+  width: auto;
+  height: 700px;
+  background-color: #3c2416;
+}
+.sub_inner_03 {
+  padding: 150px;
+  margin: auto;
+  width: 1200px;
+  height: 700px;
+  background-color: #3c2416;
+}
+.sub_inner_03_area {
+  width: 100%;
+  height: 100%;
+  background-color: #fdb;
+}
+.sub_inner_03_on {
+  padding: 40px 30px;
+  box-sizing: border-box;
+  width: 300px;
+  height: 400px;
+  background-color: #fad000;
+}
+.sub_03_title {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  width: 140px;
+  height: 60px;
+}
+.sub_03_text {
+  font-size: 1.5rem;
+  margin: 30px 0;
+  width: 240px;
+  height: 140px;
+}
+.sub_03_area > div {
+  width: 140px;
+  height: 60px;
+}
+.sub_03_area button {
+  display: block;
+  font-size: 1.25rem;
+  color: #fff;
+  width: 100%;
+  height: 100%;
+  background-color: #363636;
+  border-radius: 10px;
+}
+.sub_03_area button:hover {
+  color: #363636;
+  background-color: #fff;
+}
+
+/* #footBox ========================================================== */
+
+#footBox {
+  padding: 25px 0;
+  width: auto;
+  height: 250px;
+  background-color: #333;
+}
+.foot_inner {
+  margin: auto;
+  width: 760px;
+  height: 200px;
+}
+.mini_logo {
+  float: left;
+  margin-left: 250px;
+  width: 260px;
+  height: 70px;
+}
+.mini_logo img {
+  width: 100%;
+  height: 100%;
+}
+.foot_instagram_btn {
+  float: right;
+  width: 40px;
+  height: 40px;
+  background-color: #fdb;
+}
+.foot_instagram_btn > a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.companyinfo {
+  float: left;
+  margin-top: 50px;
+  width: 760px;
+  height: 80px;
+}
+.companyinfo address {
+  font-size: 0.875rem;
+  text-align: center;
+  text-transform: uppercase;
+  white-space: nowrap;
+  line-height: 200%;
+  color: #fff;
+}
+
+/* ===================================================================== */
+
+.moving_box {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 100;
+  width: 50px;
+  height: 200px;
+}
+.sns_box {
+  margin-bottom: 10px;
+  padding: 5px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  width: 50px;
+  height: 140px;
+  background-color: #363636;
+}
+.sns_box > div {
+  margin-bottom: 5px;
+  background-color: #fad000;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+}
+.sns_box a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.raise_btn {
+  padding: 5px;
+  width: 50px;
+  height: 50px;
+  background-color: #363636;
+  border-radius: 100%;
+}
+.raise_btn button {
+  text-transform: uppercase;
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  background-color: #fad000;
+}
+.raise_btn button:hover {
+  background-color: #333;
+}
+
+.space {
+  margin-right: 20px;
+}

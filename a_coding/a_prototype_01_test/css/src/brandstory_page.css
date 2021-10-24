@@ -1,0 +1,280 @@
+@charset "UTF-8";
+/* brandstory_page */
+
+:root {
+  --color-yellow:#FAD000;
+  --color-darkGray:#363636;
+  --color-white:#ffffff;
+  --color-textGray:#919191;
+  --color-brown:#3C2416;
+  --color-gray:#E4E4E4;
+  --color-blue:#A6BEE0;
+  --color-pink:#F47ACB;
+  --color-red:#E05158;
+}
+
+#wrap {
+  width:100%; height:auto;
+  min-height:500px;
+}
+
+/* #headBox ===================================================== */
+
+#headBox {
+  width:100%; height:auto;
+  background-color: #bbb;
+}
+  .head_area {
+    width:100%; height:120px;
+    padding:10px 0;
+    background-color:var(--color-darkGray);
+  }
+    .head_inner {
+      position: relative;
+      width:1180px; height:100%;
+      margin:auto;
+    }
+      .head_logoBox {
+        position: absolute;
+        top:0; left:calc(50% - 180px);
+        width:360px; height:100%;
+      }
+      .head_logoBox h1 {
+        width:100%; height:100%;
+      }
+      .head_logoBox h1 > a {
+        display:block;
+        width:100%; height:100%;
+        padding:0 20px;
+      }
+      .head_logoBox h1 > a > img {
+        width:360px; height:auto;
+        padding:0 20px;
+      }
+      .menu_area {
+        float:left;
+        width:100px; height:100%;
+        line-height:100px;
+      }
+        .menu_btn {
+          width:100%; height:30px;
+          font-size:20px;
+          text-transform:uppercase;
+          font-weight:400;
+          color:var(--color-white);
+        }
+      .menu_area > i {
+        margin-right:10px;
+      }
+      .login_area {
+        float:right;
+        width:100px; height:100%;
+        font-size:20px;
+        font-weight: 600;
+        line-height:100px;
+        text-transform:uppercase;
+        color:var(--color-white);
+      }
+      .login_btn {
+        width:100%; height:30px;
+        font-size:20px;
+        text-transform:uppercase;
+        font-weight:400;
+        color:var(--color-white);
+      }
+      .login_area > i {
+        margin-left:10px;
+      }
+  .navigation_area {
+    position:relative;
+    width:100%; height:150px;
+    background-image: url("../../image/head_background.jpg");
+  }
+    .navigation_bar {
+      position:absolute;
+      top:calc(50% - 30px);
+      left:calc(50% - 500px);
+      width:1000px; height:60px;
+      margin:auto;
+    }
+    .navigation_bar > ul {
+      display:flex;
+      justify-content:space-between;
+      width: 100%; height: 100%;
+    }
+    .navigation_bar > ul > li {
+      width:130px; height:100%;
+      border-radius:10px;
+    }
+    .navigation_bar > ul > li > button {
+      width: 100%; height: 100%;
+      font-size:18px;
+      text-transform:uppercase;
+      border-radius:10px;
+      color:var(--color-white);
+    }
+    .navigation_bar > ul > li:hover{
+      transition:all 300ms ease;
+      border:3px solid var(--color-white);
+      transform:scale(110%);
+      background-color:var(--color-brown);
+    }
+    .navigation_bar > ul > li button:focus{
+      transition:all 300ms ease;
+      border:3px solid var(--color-white);
+      transform:scale(110%);
+      background-color:var(--color-brown);
+    }
+
+/* #contentBox =================================================== */
+
+#contentBox {
+  width:100%; height:auto;
+  min-height:600px;
+}
+  .content_area {
+    width: 100%; height: auto;
+  }
+    .con_menu_area {
+      width:100%; height: auto;
+    }
+    .con_menu_area > dl {
+      width: 100%; height: auto;
+      min-height:200px;
+    }
+    .con_menu_area > dl > dt {
+      width: 100%; height:120px;
+      box-sizing:border-box;
+      border-top:1px solid var(--color-textGray);
+      border-bottom:1px solid var(--color-textGray);
+      padding:30px 0;
+    }
+    .con_menu_area > dl > dt > div {
+      width: 320px; height: 60px;
+      margin:auto;
+      border-radius:10px;
+      font-size:30px;
+      text-transform:uppercase;
+      text-align:center;
+      line-height:60px;
+      color:var(--color-white);
+      background-color: var(--color-textGray);
+      background-image: url("../../image/head_background.jpg");
+    }
+    .con_menu_area > dl > dd {
+      width:100%; height:auto;
+    }
+    .con_menu_area > dl ul {
+      width:1100px;
+      margin:auto;
+      margin-top:25px;
+      margin-bottom:25px;
+    }
+    .con_menu_area > dl li {
+      float:left;
+      width:200px; height:250px;
+      margin-right:25px;
+      margin-bottom:25px;
+    }
+    .con_menu_area > dl li:nth-child(5n) {
+      margin-right:0;
+    }
+      .product_newAndBest {height:1075px;}
+      .product_coffee {height:1625px;}
+      .product_coldBrew {height:800px;}
+      .product_beverage {height:1350px;}
+      .product_tea {height:1625px;}
+      .product_juice {height:250px;}
+      .product_ade {height:800px;}
+      .product_smoothieAndFrappe {height:800px;}
+      .product_dessert {height:1625px;}
+
+        .product_imgBox {
+          width:200px; height:200px;
+        }
+        .product_imgBox img {
+          width:150px; height:150px;
+          margin:25px;
+          border-radius:10px;
+          /* box-shadow:1px 1px 1px #eee; */
+        }
+        .product_textBox {
+          width:200px; height:50px;
+          /* background-color: #888; */
+          text-transform:uppercase;
+          color:var(--color-darkGray);
+          line-height:50px;
+        }
+        .product_textBox span {
+          padding:2px 10px;
+          margin-right:5px;
+          border-radius:10px;
+          font-weight:600;
+          color:var(--color-white);
+        }
+
+        .con_menu_area button {
+          width:200px; height:250px;
+        }
+        .con_menu_area button:hover .product_imgBox{
+          transition:all 500ms ease;
+          transform:scale(110%);
+        }
+        .con_menu_area button:focus img{
+          transition:all 500ms ease;
+          transform:scale(110%);
+        }
+
+        .hot_text {background-color:var(--color-red);}
+        .ice_text {background-color:var(--color-blue);}
+        .new_text {background-color:var(--color-yellow);}
+        .best_text {background-color:var(--color-pink);}
+
+/* #footBox ====================================================== */
+
+#footBox {
+  width:100%; height:auto;
+  background-color: #999;
+}
+
+  .yellow_area {
+    width:100%; height:60px;
+    background-color: var(--color-yellow);
+  }
+  .foot_area {
+    width:100%; height:200px;
+    padding:14px 0;
+    background-color: var(--color-darkGray);
+  }
+    .companyInfo_area {
+      width:750px; height:172px;
+      margin:auto;
+    }
+      .brand_logo_box {
+        width:100%; height:auto;
+        margin-bottom:16px;
+      }
+        .foot_logo {
+          width:240px; height:70px;
+          margin:auto;
+        }
+        .foot_logo img {
+          width:240px; height:auto;
+          margin:auto;
+        }
+      .companyInfo_text {
+        width:100%; height:auto;
+      }
+      .companyInfo_text address {
+        font-size: 16px;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight:600;
+        color:var(--color-textGray);
+      }
+        .copyright {
+          font-size:14px;
+          color:var(--color-textGray);
+          opacity:0.5;
+        }
+        .space {margin-right:16px;}

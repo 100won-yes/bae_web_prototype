@@ -1,0 +1,194 @@
+@charset "UTF-8";
+/* brandstory_page */
+
+:root {
+  --color-yellow:#FAD000;
+  --color-darkGray:#363636;
+  --color-white:#ffffff;
+  --color-textGray:#919191;
+  --color-brown:#3C2416;
+}
+
+#wrap {
+  width:100%; height:auto;
+  min-height:500px;
+  background-color:#aaa;
+
+}
+
+/* #headBox ===================================================== */
+
+#headBox {
+  width:100%; height:auto;
+  background-color: #bbb;
+}
+  .head_area {
+    width:100%; height:120px;
+    padding:10px 0;
+    background-color:var(--color-darkGray);
+    /* opacity:0.3; 뒤에 이미지 삽입 */
+  }
+    .head_inner {
+      position: relative;
+      width:1180px; height:100%;
+      margin:auto;
+    }
+      .head_logoBox {
+        position: absolute;
+        top:0; left:calc(50% - 180px);
+        width:360px; height:100%;
+      }
+      .head_logoBox h1 {
+        width:100%; height:100%;
+      }
+      .head_logoBox h1 > a {
+        display:block;
+        width:100%; height:100%;
+      }
+      .head_logoBox h1 > a > img {
+        width:100%; height:auto;
+      }
+      .menu_area {
+        float:left;
+        width:100px; height:100%;
+        line-height:100px;
+      }
+        .menu_btn {
+          width:100%; height:30px;
+          font-size:20px;
+          text-transform:uppercase;
+          font-weight:400;
+          color:var(--color-white);
+        }
+      .menu_area > i {
+        margin-right:10px;
+      }
+      .login_area {
+        float:right;
+        width:100px; height:100%;
+        font-size:20px;
+        font-weight: 600;
+        line-height:100px;
+        text-transform:uppercase;
+        color:var(--color-white);
+      }
+      .login_btn {
+        width:100%; height:30px;
+        font-size:20px;
+        text-transform:uppercase;
+        font-weight:400;
+        color:var(--color-white);
+      }
+      .login_area > i {
+        margin-left:10px;
+      }
+  .navigation_area {
+    position:relative;
+    width:100%; height:150px;
+    background-image: url("../../image/head_background.jpg");
+  }
+    .navigation_bar {
+      position:absolute;
+      top:calc(50% - 30px);
+      left:calc(50% - 500px);
+      width:1000px; height:60px;
+      margin:auto;
+    }
+    .navigation_bar > ul {
+      display:flex;
+      justify-content:space-between;
+      width: 100%; height: 100%;
+    }
+    .navigation_bar > ul > li {
+      width:130px; height:100%;
+      border-radius:10px;
+    }
+    .navigation_bar > ul > li > button {
+      width: 100%; height: 100%;
+      font-size:18px;
+      text-transform:uppercase;
+      border-radius:10px;
+      color:var(--color-white);
+    }
+    .navigation_bar > ul > li:hover{
+      transition:all 300ms ease;
+      border:3px solid var(--color-white);
+      transform:scale(110%);
+      background-color:var(--color-brown);
+    }
+    .navigation_bar > ul > li button:focus{
+      transition:all 300ms ease;
+      border:3px solid var(--color-white);
+      transform:scale(110%);
+      background-color:var(--color-brown);
+    }
+
+/* #contentBox =================================================== */
+
+#contentBox {
+  width:100%; height:auto;
+  min-height:600px;
+  background-color: #ccc;
+}
+  .content_area {
+    width: 100%; height: auto;
+  }
+    .menu_area {
+      width:100%; height: auto;
+    }
+    .menu_area > dl {
+      width: 100%; height: auto;
+      min-height:200px;
+      margin-bottom:20px;
+      background-color: #dd1;
+    }
+
+/* #footBox ====================================================== */
+
+#footBox {
+  width:100%; height:auto;
+  min-height:260px;
+  background-color: #999;
+}
+
+  .yellow_area {
+    width:100%; height:60px;
+    background-color: var(--color-yellow);
+  }
+  .foot_area {
+    width:100%; height:200px;
+    padding:14px 0;
+    background-color: var(--color-darkGray);
+  }
+    .companyInfo_area {
+      width:750px; height:172px;
+      margin:auto;
+    }
+      .brand_logo_box {
+        width:100%; height:auto;
+        margin-bottom:16px;
+      }
+        .foot_logo {
+          width:240px; height:70px;
+          margin:auto;
+        }
+        .foot_logo img {
+          width:240px; height:auto;
+          margin:auto;
+        }
+      .companyInfo_text {
+        width:100%; height:auto;
+      }
+      .companyInfo_text address {
+        font-size: 16px;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight:600;
+        color:var(--color-textGray);
+      }
+        .copyright {
+          font-size:14px;
+          color:var(--color-textGray);
+          opacity:0.5;
+        }
+        .space {margin-right:16px;}
