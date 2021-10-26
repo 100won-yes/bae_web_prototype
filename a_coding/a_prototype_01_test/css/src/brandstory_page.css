@@ -7,6 +7,7 @@
   --color-white:#ffffff;
   --color-textGray:#919191;
   --color-brown:#3C2416;
+  --color-brownOpacity:rgba(60, 36, 22,0.5);
   --color-gray:#E4E4E4;
   --color-blue:#A6BEE0;
   --color-pink:#F47ACB;
@@ -25,13 +26,15 @@
   background-color: #bbb;
 }
   .head_area {
+    position:fixed;
+    top:0; z-index:200;
     width:100%; height:120px;
-    padding:10px 0;
+    padding:10px 100px;
     background-color:var(--color-darkGray);
   }
     .head_inner {
       position: relative;
-      width:1180px; height:100%;
+      width:100%; height:100%;
       margin:auto;
     }
       .head_logoBox {
@@ -39,10 +42,10 @@
         top:0; left:calc(50% - 180px);
         width:360px; height:100%;
       }
-      .head_logoBox h1 {
+      .head_logoBox > h1 {
         width:100%; height:100%;
       }
-      .head_logoBox h1 > a {
+      .head_logoBox > h1 > a {
         display:block;
         width:100%; height:100%;
         padding:0 20px;
@@ -63,9 +66,69 @@
           font-weight:400;
           color:var(--color-white);
         }
+        .menu_btn:hover {
+          color:var(--color-yellow);
+        }
       .menu_area > i {
         margin-right:10px;
       }
+
+      .navigation_slider {
+        position:fixed;
+        top:120px; left:0;
+        z-index:100;
+        width: 300px; height: auto;
+        border:1px solid var(--color-darkGray);
+        background-color: var(--color-yellow);
+      }
+        .loginAndJoin_box {
+          width:100%; height:50px;
+          background-color:#eee;
+          border-bottom:1px solid rgba(54, 54, 54,0.5);
+        }
+        .loginAndJoin_box > div {
+          float:left;
+          padding:10px;
+          width:100px; height:50px;
+        }
+        .loginAndJoin_box > div:first-child {
+          float:right;
+          width:50px;
+        }
+        .loginAndJoin_box > div > button,
+        .loginAndJoin_box > div > a {display:block;}
+
+          .close_btn {
+            width:100%; height:100%;
+          }
+          .close_btn > i {
+            font-size:30px;
+            line-height:30px;
+            text-align:center;
+            color:var(--color-darkGray)
+          }
+
+          .sliderArea_login,
+          .sliderArea_join {
+            width:100%; height:100%;
+            text-align:center;
+            line-height:30px;
+            border:1px solid rgba(54, 54, 54,0.5);
+            border-radius:5px;
+            background-color: #a81;
+          }
+        .category_box {
+          width:100%; height:400px;
+          background-color:#ccc;
+        }
+        .appDownload_box {
+          width:100%; height:150px;
+          background-color: #777;
+        }
+        .sns_box {
+          width:100%; height:120px;
+          background-color:#aaa;
+        }
       .login_area {
         float:right;
         width:100px; height:100%;
@@ -82,11 +145,52 @@
         font-weight:400;
         color:var(--color-white);
       }
+      .login_btn:hover {
+        color:var(--color-yellow);
+      }
       .login_area > i {
         margin-left:10px;
       }
+      .login_actionBox {
+        position:fixed;
+        top:calc(50% - 250px); left:calc(50% - 200px);
+        z-index:1000;
+        width:400px; height:500px;
+        background-color:#15a;
+      }
+      .navigation_slider dl {
+        padding:10px;
+        width:100%; height:100%;
+      }
+      .navigation_slider dt {
+        width:100%; height:30px;
+        padding-left:10px;
+        font-size:18px;
+        text-transform:uppercase;
+        border-bottom:1px solid rgba(54, 54, 54,0.5);
+      }
+      .navigation_slider dd a {display:block;}
+
+      .category_box dd {
+        width:100%; height:50px;
+        padding:10px;
+        background-color: #aa5;
+      }
+      .category_box dd > a {
+        width:150px; height:100%;
+        font-size:20px;
+        font-weight:500;
+        text-transform:uppercase;
+        background-color: #56a;
+      }
+
+      
+
+/* ============================================================= */
+
   .navigation_area {
     position:relative;
+    margin-top:120px;
     width:100%; height:150px;
     background-image: url("../../image/head_background.jpg");
   }
@@ -105,6 +209,7 @@
     .navigation_bar > ul > li {
       width:130px; height:100%;
       border-radius:10px;
+      transition:all 500ms linear;
     }
     .navigation_bar > ul > li > button {
       width: 100%; height: 100%;
@@ -113,17 +218,16 @@
       border-radius:10px;
       color:var(--color-white);
     }
+    /* 이미지 수정 후 백그라운드 효과 추가하기 */
     .navigation_bar > ul > li:hover{
-      transition:all 300ms ease;
-      border:3px solid var(--color-white);
-      transform:scale(110%);
-      background-color:var(--color-brown);
+      border:2px solid var(--color-white);
+      transform:scale(1.1);
+      background-color:var(--color-brownOpacity);
     }
     .navigation_bar > ul > li button:focus{
-      transition:all 300ms ease;
       border:3px solid var(--color-white);
-      transform:scale(110%);
-      background-color:var(--color-brown);
+      transform:scale(1.1);
+      background-color:var(--color-brownOpacity);
     }
 
 /* #contentBox =================================================== */
@@ -189,13 +293,18 @@
       .product_smoothieAndFrappe {height:800px;}
       .product_dessert {height:1625px;}
 
+      .product_btn > span {display:block;}
+
         .product_imgBox {
           width:200px; height:200px;
+          transition:all 500ms linear;
+
         }
         .product_imgBox img {
           width:150px; height:150px;
           margin:25px;
           border-radius:10px;
+          transition:all 500ms linear;  
           /* box-shadow:1px 1px 1px #eee; */
         }
         .product_textBox {
@@ -205,7 +314,7 @@
           color:var(--color-darkGray);
           line-height:50px;
         }
-        .product_textBox span {
+        .product_textBox > span {
           padding:2px 10px;
           margin-right:5px;
           border-radius:10px;
@@ -217,12 +326,10 @@
           width:200px; height:250px;
         }
         .con_menu_area button:hover .product_imgBox{
-          transition:all 500ms ease;
-          transform:scale(110%);
+          transform:scale(1.1);
         }
         .con_menu_area button:focus img{
-          transition:all 500ms ease;
-          transform:scale(110%);
+          transform:scale(1.1);
         }
 
         .hot_text {background-color:var(--color-red);}
