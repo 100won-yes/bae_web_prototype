@@ -54,6 +54,9 @@
         width:360px; height:auto;
         padding:0 20px;
       }
+
+      /* .menu_area ============================================= */
+
       .menu_area {
         float:left;
         width:100px; height:100%;
@@ -72,6 +75,33 @@
       .menu_area > i {
         margin-right:10px;
       }
+      
+      /* .login_area ============================================== */
+
+      .login_area {
+        float:right;
+        width:100px; height:100%;
+        font-size:20px;
+        font-weight: 600;
+        line-height:100px;
+        text-transform:uppercase;
+        color:var(--color-white);
+      }
+      .login_btn {
+        width:100%; height:30px;
+        font-size:20px;
+        text-transform:uppercase;
+        font-weight:400;
+        color:var(--color-white);
+      }
+      .login_btn:hover {
+        color:var(--color-yellow);
+      }
+      .login_area > i {
+        margin-left:10px;
+      }
+      
+      /* .navigation_slider ========================================= */
 
       .navigation_slider {
         position:fixed;
@@ -81,6 +111,67 @@
         border:1px solid var(--color-darkGray);
         background-color: var(--color-yellow);
       }
+      .navigation_slider dl {
+        padding:10px;
+        width:100%; height:auto;
+      }
+      .navigation_slider dt {
+        width:100%; height:30px;
+        padding-left:10px;
+        font-size:18px;
+        text-transform:uppercase;
+        border-bottom:1px solid rgba(54, 54, 54,0.5);
+      }
+      .navigation_slider dd a {display:block;}
+      .category_dt_title {
+        margin-bottom:8px;
+      }
+      .category_box dd {
+        width:100%; height:auto;
+        padding:8px;
+        border:1px solid #777;
+        background-color: #aa5;
+      }
+
+      .category_box dd > a {
+        width:150px; height:100%;
+        font-size:20px;
+        font-weight:500;
+        text-transform:uppercase;
+        background-color: #56a;
+      }
+      .sub_categoryBox {
+        width:100%; height:auto;
+        padding:8px 0;
+        background-color: #888;
+      }
+      .sub_categoryBox > ul {
+        width: 100%; height: auto;
+        padding:0 8px;
+        
+      }
+      .sub_categoryBox li {
+        width: 100%; height:24px;
+        margin-bottom:8px;
+        background-color: #11d;
+      }
+      .sub_categoryBox li:last-of-type {
+        margin-bottom:0;
+      }
+      .sub_categoryBox a {
+        width: 100%; height: 100%;
+        font-size:16px;
+        font-weight:300;
+        text-transform:uppercase;
+        background-color: #d26;
+      }
+      .category_box > dl > dd:hover .none {
+        display:block;
+      }
+      .category_box > dl > dd > a:focus + .none {
+        display:block;
+      }
+
         .loginAndJoin_box {
           width:100%; height:50px;
           background-color:#eee;
@@ -111,83 +202,124 @@
           .sliderArea_login,
           .sliderArea_join {
             width:100%; height:100%;
+            font-size:14px;
             text-align:center;
             line-height:30px;
             border:1px solid rgba(54, 54, 54,0.5);
             border-radius:5px;
             background-color: #a81;
           }
+          .sliderArea_join {
+            box-sizing:border-box;
+            line-height:28px;
+          }
         .category_box {
-          width:100%; height:400px;
+          width:100%; height:516px;
           background-color:#ccc;
+          border-bottom:1px solid rgba(54, 54, 54,0.5);
         }
+
+
+
         .appDownload_box {
-          width:100%; height:150px;
+          width:100%; height:auto;
           background-color: #777;
+          border-bottom:1px solid rgba(54, 54, 54,0.5);
         }
+        .appDownload_box dd {
+          width:100%; height:auto;
+          padding:8px;
+          padding-bottom:0;
+        }
+          .downloadBox_title {
+            width:100%; height:auto;
+            margin-bottom:8px;
+          }
+          .downloadBox_title > span {
+            width: 100%; height:auto;
+            font-size:14px;
+            font-weight:600;
+            background-color: #aa7;
+          }
+          .downloadBox_link {
+            width:100%; height:auto;
+            padding:0 8px;
+          }
+          .downloadBox_link > div {
+            width: 100%; height:30px;
+          }
+          .downloadBox_link span,
+          .downloadBox_link a {
+            width:100px; height:30px;
+          }
+          .downloadBox_link span {
+            line-height:30px;
+            font-size:14px;
+            font-weight:600;
+          }
+          .downloadBox_link a {
+            border-radius:10px;
+          }
+            .android_link {
+              margin-bottom:4px;
+            }
+            .android_link > a {
+              background-image: url("../../image/android_btn.png");
+              background-repeat: no-repeat;
+              background-position:50% 50%;
+            }
+            .ios_link > a {
+              background-image: url("../../image/ios_btn.png");
+              background-repeat: no-repeat;
+              background-position:50% 50%;
+            }
+          .downloadBox_link span {
+            display: block;
+            float:left;
+          }
+          .downloadBox_link a {
+            display: block;
+            float:right;
+          }
+
+
+          
         .sns_box {
-          width:100%; height:120px;
+          width:100%; height:auto;
           background-color:#aaa;
         }
-      .login_area {
-        float:right;
-        width:100px; height:100%;
-        font-size:20px;
-        font-weight: 600;
-        line-height:100px;
-        text-transform:uppercase;
-        color:var(--color-white);
-      }
-      .login_btn {
-        width:100%; height:30px;
-        font-size:20px;
-        text-transform:uppercase;
-        font-weight:400;
-        color:var(--color-white);
-      }
-      .login_btn:hover {
-        color:var(--color-yellow);
-      }
-      .login_area > i {
-        margin-left:10px;
-      }
-      .login_actionBox {
-        position:fixed;
-        top:calc(50% - 250px); left:calc(50% - 200px);
-        z-index:1000;
-        width:400px; height:500px;
-        background-color:#15a;
-      }
-      .navigation_slider dl {
-        padding:10px;
-        width:100%; height:100%;
-      }
-      .navigation_slider dt {
-        width:100%; height:30px;
-        padding-left:10px;
-        font-size:18px;
-        text-transform:uppercase;
-        border-bottom:1px solid rgba(54, 54, 54,0.5);
-      }
-      .navigation_slider dd a {display:block;}
-
-      .category_box dd {
-        width:100%; height:50px;
-        padding:10px;
-        background-color: #aa5;
-      }
-      .category_box dd > a {
-        width:150px; height:100%;
-        font-size:20px;
-        font-weight:500;
-        text-transform:uppercase;
-        background-color: #56a;
-      }
-
+        .sns_box dl {
+          padding-bottom:0;
+        }
+        .sns_box dd {
+          width:70%; height:auto;
+          padding:8px;
+          margin:auto;
+        }
+        .sns_box dd > div {
+          float:left;
+          width:calc(100% / 3); height:auto;
+        }
+        .sns_box dd > div > a {
+          margin:auto;
+          border-radius:100%;
+          border:1px solid rgba(54, 54, 54,0.5);
+          width:38px; height:38px;
+        }
       
-
+      
 /* ============================================================= */
 
+  .login_actionBox {
+    position:fixed;
+    top:calc(50% - 250px); left:calc(50% - 200px);
+    z-index:1000;
+    width:400px; height:500px;
+    background-color:#15a;
+  }
+
+
+/* ============================================================== */
   .navigation_area {
     position:relative;
     margin-top:120px;
