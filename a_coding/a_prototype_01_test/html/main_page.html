@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
+    <link rel="stylesheet" href="../fonts/fontawesome/css/all.min.css">
     
     <link rel="stylesheet" href="../css/common/reset.css">
     <link rel="stylesheet" href="../css/common/common.css">
@@ -19,15 +20,153 @@
     <!-- layout -->
     <div id="wrap">
       <header id="headBox">
-        <h1 class="blind">headBox</h1>
-        <div class="head_inner clearfix">
-          <nav class="menu_navigation"><a href="#"><i></i><h2>menu</h2></a></nav>
-          <div class="logo_area">
-            <a href="#">
-              <h1 class="blind">메가커피</h1><img src="../image/top_logo.png" alt="메가커피 로고">
-            </a>
+        <div class="head_area">
+          <!-- 박스 크기 변환 js 추가 예정 -->
+          <div class="head_inner clearfix">
+            <div class="head_logoBox">
+              <h1>
+                <a href="./main_page.html">
+                  <span class="blind">메가커피</span>
+                  <img src="../image/top_logo.png" alt="메가커피" aria-hidden="true" />
+                </a>
+              </h1>
+            </div>
+            <div class="menu_area">
+              <h2 class="blind">menuArea</h2>
+              <button class="menu_btn" type="button">
+                <div class="menu_move_btn">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+                <span>menu</span>
+              </button>
+            </div>
+            <div class="login_area">
+              <h2 class="blind">loginArea</h2>
+              <button class="login_btn" type="button">
+                <span>login</span>
+                <i class="far fa-user-circle"></i>
+              </button>
+            </div>
           </div>
-          <div class="login_area"><a href="#"><i></i><h2>log in</h2></a></div>
+        </div><!-- .head_area -->
+        <nav class="navigation_slider none"><!-- 메뉴박스 제작중 -->
+          <div class="loginAndJoin_box">
+            <div>
+              <button class="close_btn"type="button">
+              <i class="fas fa-times"></i>
+              </button>
+            </div>
+            <div>
+              <button class="sliderArea_login" type="button">로그인</button>
+            </div>
+            <div>
+              <a class="sliderArea_join" href="#">회원가입</a>
+            </div>
+          </div>
+          <div class="category_box">
+            <dl>
+              <dt class="category_dt_title">category</dt>
+              <dd>
+                <a class="category_dd_title" href="#">brand story</a>
+                <div class="none sub_categoryBox">
+                  <ul>
+                    <li><a href="#">회사 소개</a></li>
+                    <li><a href="#">브랜드 소개</a></li>
+                    <li><a href="#">비전</a></li>
+                    <li><a href="#">bi</a></li>
+                    <li><a href="#">오시는 길</a></li>
+                  </ul>
+                </div>
+              </dd>
+              <dd>
+                <a class="category_dd_title" href="#">menu</a>
+                <div class="none sub_categoryBox">
+                  <ul>
+                    <li><a href="#">new &amp; best</a></li>
+                    <li><a href="#">coffee</a></li>
+                    <li><a href="#">beverage</a></li>
+                    <li><a href="#">tea</a></li>
+                    <li><a href="#">juice &amp; ade</a></li>
+                    <li><a href="#">smoothie &amp; frappe</a></li>
+                    <li><a href="#">dessert</a></li>
+                  </ul>
+                </div>
+              </dd>
+              <dd>
+                <a class="category_dd_title" href="#">franchise</a>
+                <div class="none sub_categoryBox">
+                  <ul>
+                    <li><a href="#">개설비용</a></li>
+                    <li><a href="#">인테리어</a></li>
+                    <li><a href="#">faq</a></li>
+                    <li><a href="#">가맹문의</a></li>
+                    <li><a href="#">개설절차</a></li>
+                  </ul>
+                </div>
+              </dd>
+              <dd>
+                <a class="category_dd_title" href="#">store</a>
+                <div class="none sub_categoryBox">
+                  <ul>
+                    <li><a href="#">매장 찾기</a></li>
+                    <li><a href="#">우수가맹점</a></li>
+                  </ul>
+                </div>
+              </dd>
+              <dd>
+                <a class="category_dd_title" href="#">news</a>
+                <div class="none sub_categoryBox">
+                  <ul>
+                    <li><a href="#">언론보도</a></li>
+                    <li><a href="#">공지사항</a></li>
+                  </ul>
+                </div>
+              </dd>
+            </dl>
+          </div>
+          <div class="appDownload_box">
+            <dl>
+              <dt class="appDownload_dt_title">app</dt>
+              <dd>
+                <div class="downloadBox_title">
+                  <span>메가커피 멤버쉽 App 다운로드</span>
+                </div>
+                <div class="downloadBox_link">
+                  <div class="android_link">
+                    <span>Android</span>
+                    <a href="https://play.google.com/store/apps/details?id=co.kr.waldlust.megacoffee"></a>
+                  </div>
+                  <div class="ios_link">
+                    <span>iOS</span>
+                    <a href="https://apps.apple.com/kr/app/%EB%A9%94%EA%B0%80%EC%BB%A4%ED%94%BC/id1473428031"></a>
+                  </div>
+                </div>
+              </dd>
+            </dl>
+          </div>
+          <div class="sns_box">
+            <dl>
+              <dt class="sns_dt_title">sns</dt>
+              <dd class="clearfix">
+                <div class="sns_btn_blog">
+                  <a href="#"></a>
+                </div>
+                <div class="sns_btn_facebook">
+                  <a href="#"></a>
+                </div>
+                <div class="sns_btn_insta">
+                  <a href="#"></a>
+                </div>
+              </dd>
+            </dl>
+          </div>
+        </nav> 
+
+        <!-- 로그인박스 제작중 -->
+        <div class="login_actionBox none">
+          로그인박스
         </div>
       </header><!-- #headBox -->
       <section id="mainAdBox">
@@ -50,7 +189,7 @@
               <div class="brandstory_box"><a href="#"><div><h3>brandstory</h3></div></a></div>
             </li>
             <li class="menu">
-              <div class="menu_box"><a href="./brandstory_page.html"><div><h3>menu</h3></div></a></div>
+              <div class="menu_box"><a href="./menu_page.html"><div><h3>menu</h3></div></a></div>
             </li>
             <li class="franchise">
               <div class="franchise_box"><a href="#"><div><h3>franchise</h3></div></a></div>
@@ -84,8 +223,16 @@
           <div class="introduction_sub_01"></div>
         </div>
         <div class="introduction_btn_box">
-          <div class="introduction_left_button"><button type="button"></button></div>
-          <div class="introduction_right_button"><button type="button"></button></div>
+          <div class="introduction_prev_button">
+            <button type="button">
+              <i class="fas fa-chevron-left"></i>
+            </button>
+          </div>
+          <div class="introduction_next_button">
+            <button type="button">
+              <i class="fas fa-chevron-right"></i>
+            </button>
+          </div>
         </div>
       </section><!-- #introductionBox -->
       <section id="subAdBox_01">
@@ -125,27 +272,35 @@
         </div>
       </section><!-- #subAdBox_03 -->
       <footer id="footBox">
-        <h2 class="blind">footBox</h2>
-        <div class="foot_inner claearfix">
-          <div class="mini_logo"><img src="../image/top_logo.png" alt="메가커피 로고"></div>
-          <div class="foot_instagram_btn"><a href="#"></a></div>
-          <div class="companyinfo">
-            <address>
-              <p>서울특별시 마포구 월드컵북로4길 81 1층(주)앤하우스&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>본사대표전화</em> <span>1588-0656</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>fax</em> <span>02-325-5199</span></p>
-              <p><em>법인명</em>:<span>주식회사 앤하우스</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>대표자</em>:<span>김대영</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>사업자등록번호</em> <span>105-87-51367</span></p>
-              <span>copyright</span>&copy; 2016 mega coffee all rights reserved.
-            </address>
+        <div class="yellow_area"></div><!-- .yellow_area -->
+        <div class="foot_area">
+          <h2 class="blind">companyInfo</h2>
+          <div class="companyInfo_area">
+            <div class="brand_logo_box">
+              <h3 class="foot_logo">
+                <img src="../image/top_logo.png" alt="메가커피 하단로고" />
+              </h3>
+            </div>
+            <div class="companyInfo_text">
+              <h3 class="blind">회사 정보</h3>
+              <address>
+                <p>
+                  서울특별시 마포구 월드컵북로4길 81 1층(주)앤하우스<span class="space"></span>
+                  <em>본사대표전화</em> 1588-0656<span class="space"></span>
+                  <em>fax</em><span> 02-325-5199</span>
+                </p>
+                <p>
+                  <em>법인명</em> : 주식회사 앤하우스<span class="space"></span>
+                  <em>대표자</em> : 김대영<span  class="space"></span>
+                  <em>사업자등록번호</em> <span>105-87-51367</span>
+                </p>
+                <span class="copyright">copyright&copy; 2016 mega coffee all rights reserved.</span>
+              </address>
+            </div>
           </div>
-        </div>
+        </div><!-- .foot_area -->
+
       </footer><!-- #footBox -->
-      <div class="moving_box">
-        <div class="sns_box">
-          <div class="instagram_btn"><a href="#"></a></div>
-          <div class="facebook_btn"><a href="#"></a></div>
-          <div class="blog_btn"><a href="#"></a></div>
-        </div>
-        <div class="raise_btn"><button type="button">↑<br>top</button></div>
-      </div><!-- .moving_box -->
     </div><!-- #wrap -->
     <!-- script -->
     <script></script>

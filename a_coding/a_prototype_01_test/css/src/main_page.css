@@ -1,71 +1,425 @@
 @charset "UTF-8";
 /* main_page.css */
 
+:root {
+  --color-yellow:#FAD000;
+  --color-darkGray:#363636;
+  --color-white:#ffffff;
+  --color-textGray:#919191;
+  --color-brown:#3C2416;
+  --color-brownOpacity:rgba(60, 36, 22,0.5);
+  --color-halfBlock:rgba(54, 54, 54,0.5);
+  --color-halfWhite:rgba(255, 255, 255,0.5);
+  --color-gray:#E4E4E4;
+  --color-blue:#A6BEE0;
+  --color-pink:#F47ACB;
+  --color-red:#E05158;
+}
 
-:root {color:#363636;}
-
-#wrap {width:auto; height:auto;}
+#wrap {
+  width:100%; height:auto;
+  min-height:500px;
+}
 
 /* #headBox ===================================================== */
 
 #headBox {
-  padding-top:25px;
-  width:auto; height:140px; background-color:#363636;
+  width:100%; height:auto;
+  background-color: #bbb;
 }
-  .head_inner {margin:auto; width:1090px; height:90px;}
-    .menu_navigation {
-      float:left; margin-top:25px;
-      width:120px; height:40px;
-    }
-    .menu_navigation > a {
-      display:block;
+  .head_area {
+    position:fixed;
+    top:0; z-index:200;
+    width:100%; height:120px;
+    padding:10px 100px;
+    background-color:var(--color-darkGray);
+  }
+    .head_inner {
+      position: relative;
       width:100%; height:100%;
+      margin:auto;
     }
-    .menu_navigation h2 {
-      line-height:40px; text-align:center;
-      font-size:1.4rem; text-transform:uppercase;
-      color:#fff;
-      width:auto; height:100%;
-    }
-    .menu_navigation i {
-      display:block; margin:0; float:left;
-      width:40px; height:40px; background-color:#fff;
-    }
-    
-    .logo_area {
-      float:left; margin:0 265px;
-      padding:5px; box-sizing:border-box;
-      width:320px; height:90px;
-    }
-    .logo_area > a {
-      display:block;
-      width:100%; height:100%;
-    }
-    .logo_area img {width:100%; height:100%;}
-    .login_area {
-      float:right; margin-top:25px;
-      width:120px; height:40px;
-    }
-    .login_area > a {
-      display:block;
-      width:100%; height:100%;
-    }
-    .login_area h2 {
-      line-height:40px; text-align:center;
-      font-size:1.4rem; text-transform:uppercase;
-      color:#fff;
-      word-spacing:-6px;
-      width:auto; height:100%;
-    }
-    .login_area i {
-      display:block; margin:0; float:right;
-      width:40px; height:40px; background-color:#fff;
-    }
+      .head_logoBox {
+        position: absolute;
+        top:0; left:calc(50% - 180px);
+        width:360px; height:100%;
+      }
+      .head_logoBox > h1 {
+        width:100%; height:100%;
+      }
+      .head_logoBox > h1 > a {
+        display:block;
+        width:100%; height:100%;
+        padding:0 20px;
+      }
+      .head_logoBox h1 > a > img {
+        width:360px; height:auto;
+        padding:0 20px;
+      }
+
+      /* .menu_area ============================================= */
+
+      .menu_area {
+        position:relative;
+        float:left;
+        width:100px; height:100%;
+        line-height:100px;
+      }
+        .menu_btn {
+          position:absolute;
+          top:35px; left:0;
+          width:100%; height:30px;
+          font-size:20px;
+          text-transform:uppercase;
+          font-weight:400;
+          color:var(--color-white);
+        }
+        .menu_btn:hover {
+          color:var(--color-yellow);
+        }
+        .menu_btn:hover .menu_move_btn > span {
+          background-color:var(--color-yellow);
+        }
+      .menu_area > i {
+        margin-right:10px;
+      }
+      .menu_move_btn {
+        position:relative;
+        float:left;
+        width:20px; height:20px;
+        margin-right:5px;
+        margin-left:10px;
+      }
+      .menu_move_btn > span {
+        position:absolute;
+        display:block;
+        width:20px; height:2px;
+        background-color:var(--color-white);
+        /* border-radius:50%; */
+        transition:all 300ms linear;
+      }
+      .menu_move_btn > span:nth-child(1) {
+        top:4px;
+      }
+      .menu_move_btn > span:nth-child(2) {
+        top:10px;
+      }     
+      .menu_move_btn > span:nth-child(3) {
+        top:16px;
+      }
+      .menu_btn:hover .menu_move_btn > span:nth-child(1) {
+        transform:translateY(5px) rotate(90deg);
+      }
+      .menu_btn:hover .menu_move_btn > span:nth-child(2) {
+        width:10px;
+        transform:translate(1px, 4px) rotate(45deg);
+      }
+      .menu_btn:hover .menu_move_btn > span:nth-child(3) {
+        width:10px;
+        transform:translate(9px, -2px) rotate(-45deg);
+      }
+      .menu_btn > span {
+        display:block;
+        float:left;
+        transition:all 300ms linear;
+      }
+      
+      /* .login_area ============================================== */
+
+      .login_area {
+        float:right;
+        width:100px; height:100%;
+        font-size:20px;
+        font-weight: 600;
+        line-height:100px;
+        text-transform:uppercase;
+        color:var(--color-white);
+      }
+      .login_btn {
+        width:100%; height:30px;
+        font-size:20px;
+        text-transform:uppercase;
+        font-weight:400;
+        color:var(--color-white);
+        transition:all 300ms linear;
+      }
+      .login_btn:hover {
+        color:var(--color-yellow);
+      }
+      .login_area > i {
+        margin-left:10px;
+      }
+      
+      /* .navigation_slider ========================================= */
+
+      .navigation_slider {
+        position:fixed;
+        top:120px; left:0;
+        z-index:100;
+        width: 300px; height: auto;
+        border:1px solid var(--color-brown);
+        /* background-color: var(--color-yellow); */
+      }
+      .navigation_slider dl {
+        padding:10px;
+        width:100%; height:auto;
+      }
+      .navigation_slider dt {
+        width:100%; height:30px;
+        padding-left:10px;
+        font-size:18px;
+        text-transform:uppercase;
+      }
+      .navigation_slider dd a {display:block;}
+      .category_dt_title {
+        color:var(--color-brown);
+        margin-bottom:8px;
+        border-bottom:1px solid var(--color-brownOpacity);
+      }
+      .category_box dd {
+        width:100%; height:auto;
+        padding:8px;
+        /* border:1px solid #777; */
+      }
+
+      .category_box dd > a {
+        width:150px; height:100%;
+        font-size:20px;
+        font-weight:500;
+        text-transform:uppercase;
+        color:var(--color-brown);
+        background-color:var(--color-white);
+        transition:all 500ms linear;
+        border-radius:0 20px 20px 0;
+        /* background-color: #56a; */
+      }
+      .sub_categoryBox {
+        width:100%; height:auto;
+        padding:8px 0;
+      }
+      .sub_categoryBox > ul {
+        width: 100%; height: auto;
+        padding:0 8px;
+        /* background-color:var(--color-brown); */
+      }
+      .sub_categoryBox li {
+        width: 100%; height:24px;
+        margin-bottom:8px;
+      }
+      .sub_categoryBox li:last-of-type {
+        margin-bottom:0;
+      }
+      .sub_categoryBox a {
+        width: 100%; height: 100%;
+        color:var(--color-brown);
+        font-size:16px;
+        font-weight:300;
+        text-transform:uppercase;
+        transition:all 100ms linear;
+      }
+      .sub_categoryBox a:hover {
+        font-weight:700;
+      }
+      .category_box > dl > dd:hover .none {
+        display:block;
+      }
+      .category_box > dl > dd > a:focus + .none {
+        display:block;
+      }
+      .category_box > dl > dd:hover .category_dd_title {
+        color:var(--color-yellow);
+        background-color:var(--color-brown);
+      }
+
+        .loginAndJoin_box {
+          width:100%; height:50px;
+          border-bottom:1px solid var(--color-brown);
+          background-color:var(--color-gray);
+        }
+        .loginAndJoin_box > div {
+          float:left;
+          padding:10px;
+          width:100px; height:50px;
+        }
+        .loginAndJoin_box > div:first-child {
+          float:right;
+          width:50px;
+        }
+        .loginAndJoin_box > div > button,
+        .loginAndJoin_box > div > a {display:block;}
+
+          .close_btn {
+            width:100%; height:100%;
+          }
+          .close_btn > i {
+            font-size:30px;
+            line-height:30px;
+            text-align:center;
+            color:var(--color-brown);
+          }
+
+          .sliderArea_login,
+          .sliderArea_join {
+            width:100%; height:100%;
+            font-size:14px;
+            text-align:center;
+            line-height:30px;
+            border:1px solid var(--color-brown);
+            border-radius:5px;
+            color:1px solid var(--color-brown);
+            background-color:var(--color-white);
+            transition:all 300ms linear;
+          }
+          .sliderArea_login:hover {
+            color:var(--color-yellow);
+            background-color:var(--color-brown);
+          }
+          .sliderArea_join:hover {
+            color:var(--color-yellow);
+            background-color:var(--color-brown);
+          }
+          .sliderArea_join {
+            box-sizing:border-box;
+            line-height:28px;
+          }
+        .category_box {
+          width:100%; height:516px;
+          /* background-color:rgba(250, 208, 0, 1); */
+          background-color:#fff;
+          border-bottom:1px solid var(--color-brown);
+        }
+
+
+
+        .appDownload_box {
+          width:100%; height:auto;
+          background-color:var(--color-yellow);
+          border-bottom:1px solid var(--color-brownOpacity);
+        }
+        .appDownload_dt_title {
+          color:var(--color-brown);
+          border-bottom:1px solid var(--color-brown);
+        }
+        .appDownload_box dd {
+          width:100%; height:auto;
+          padding:8px;
+          padding-bottom:0;
+        }
+          .downloadBox_title {
+            color:var(--color-brown);
+            width:100%; height:auto;
+            margin-bottom:8px;
+          }
+          .downloadBox_title > span {
+            width: 100%; height:auto;
+            font-size:14px;
+            font-weight:600;
+          }
+          .downloadBox_link {
+            width:100%; height:auto;
+            padding:0 8px;
+          }
+          .downloadBox_link > div {
+            width: 100%; height:30px;
+          }
+          .downloadBox_link span,
+          .downloadBox_link a {
+            width:100px; height:30px;
+          }
+          .downloadBox_link span {
+            line-height:30px;
+            font-size:14px;
+            font-weight:600;
+          }
+          .downloadBox_link a {
+            border-radius:10px;
+          }
+            .android_link {
+              color:var(--color-brown);
+              margin-bottom:4px;
+            }
+            .android_link > a {
+              background-image: url("../../image/android_btn.png");
+              background-repeat: no-repeat;
+              background-position:50% 50%;
+            }
+            .ios_link > a {
+              background-image: url("../../image/ios_btn.png");
+              background-repeat: no-repeat;
+              background-position:50% 50%;
+            }
+          .downloadBox_link span {
+            display: block;
+            float:left;
+          }
+          .downloadBox_link a {
+            display: block;
+            float:right;
+          }
+
+
+          
+        .sns_box {
+          width:100%; height:auto;
+          color:var(--color-white);
+          background-color:var(--color-darkGray);
+        }
+        .sns_box dl {
+          padding-bottom:0;
+        }
+        .sns_box dd {
+          width:70%; height:auto;
+          padding:8px;
+          margin:auto;
+        }
+        .sns_box dd > div {
+          float:left;
+          width:calc(100% / 3); height:auto;
+        }
+        .sns_box dd > div > a {
+          margin:auto;
+          border-radius:100%;
+          width:38px; height:38px;
+        }
+        .sns_dt_title {
+          border-bottom:1px solid var(--color-halfWhite);
+        }
+        .sns_btn_blog > a {
+          background-image: url("../../image/top_blog.png");
+          background-repeat: no-repeat;
+          background-position:50% 50%;
+        }
+        .sns_btn_facebook > a {
+          background-image: url("../../image/top_facebook.png");
+          background-repeat: no-repeat;
+          background-position:50% 50%;
+        }
+        .sns_btn_insta > a {
+          background-image: url("../../image/top_insta.png");
+          background-repeat: no-repeat;
+          background-position:50% 50%;
+        }
+      
+      
+/* ============================================================= */
+
+  .login_actionBox {
+    position:fixed;
+    top:calc(50% - 250px); left:calc(50% - 200px);
+    z-index:1000;
+    width:400px; height:500px;
+    background-color:#15a;
+  }
+
+
+/* ============================================================== */
+
 
 /* #mainAdBox ==================================================== */
 
 #mainAdBox {
   margin:auto; width:auto; height:760px; background-color:#fdb;
+  margin-top:120px;
 }
   .indicator_box {
     margin:auto; margin-top:696px;
@@ -86,7 +440,10 @@
   width:1280px; height:760px; background-color:#fff;
 }
   .menu_inner {width:940px; height:580px;}
-  .menu_inner li {float:left;}
+  .menu_inner li {
+    float:left;
+    transition:all 300ms linear;
+  }
   .menu_inner li > div {
     width:100%; height:100%;
   }
@@ -96,7 +453,7 @@
     width:100%; height:100%; background-color:#fdb;
   }
   .menu_inner h3 {font-size:1.5rem; text-transform:uppercase;}
-  
+  .menu_inner li:hover {transform:scale(1.02);}
     .brandstory {
       margin-bottom:20px; margin-right:20px;
       width:300px; height:280px;
@@ -146,6 +503,7 @@
         width:100%; height:100%;
         background-color:#363636;
         border-radius:10px;
+        transition:all 300ms linear;
       }
       .newproduct_area button:hover {color:#363636; background-color:#fff;}
 
@@ -180,9 +538,9 @@
     .introduction_btn_box button {
       width:100%; height:100%; background-color:#ffb;
     }
-    .introduction_left_button {float:left;}
-    .introduction_right_button {float:right;}
-
+    .introduction_prev_button {float:left;}
+    .introduction_next_button {float:right;}
+    .introduction_btn_box i {font-size:50px;}
 /* #subAdBox_01 ===================================================== */
 
 #subAdBox_01 {
@@ -226,6 +584,7 @@
       width:100%; height:100%;
       background-color:#363636;
       border-radius:10px;
+      transition:all 300ms linear;
     }
     .sub_02_area button:hover {color:#363636; background-color:#fff;}
 
@@ -260,64 +619,58 @@
         width:100%; height:100%;
         background-color:#363636;
         border-radius:10px;
+        transition:all 300ms linear;
       }
       .sub_03_area button:hover {color:#363636; background-color:#fff;}
 
 /* #footBox ========================================================== */
 
 #footBox {
-  padding:25px 0;
-  width:auto; height:250px; background-color:#333;
+  width:100%; height:auto;
+  background-color: #999;
 }
-  .foot_inner {
-    margin:auto; width:760px; height:200px;
+
+  .yellow_area {
+    width:100%; height:60px;
+    background-color: var(--color-yellow);
   }
-    .mini_logo {
-      float:left; margin-left:250px;
-      width:260px; height:70px;
+  .foot_area {
+    width:100%; height:200px;
+    padding:14px 0;
+    background-color: var(--color-darkGray);
+  }
+    .companyInfo_area {
+      width:750px; height:172px;
+      margin:auto;
     }
-    .mini_logo img {width:100%; height:100%;}
-    .foot_instagram_btn {
-      float:right;
-      width:40px; height:40px; background-color:#fdb;
-    }
-    .foot_instagram_btn > a {display:block; width:100%; height:100%;}
-    .companyinfo {
-      float:left; margin-top:50px;
-      width:760px; height:80px;
-    }
-    .companyinfo address {
-      font-size:0.875rem; text-align:center;
-      text-transform:uppercase;
-      white-space:nowrap; line-height:200%;
-      color:#fff;
-    }
+      .brand_logo_box {
+        width:100%; height:auto;
+        margin-bottom:16px;
+      }
+        .foot_logo {
+          width:240px; height:70px;
+          margin:auto;
+        }
+        .foot_logo img {
+          width:240px; height:auto;
+          margin:auto;
+        }
+      .companyInfo_text {
+        width:100%; height:auto;
+      }
+      .companyInfo_text address {
+        font-size: 16px;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight:600;
+        color:var(--color-textGray);
+      }
+        .copyright {
+          font-size:14px;
+          color:var(--color-textGray);
+          opacity:0.5;
+        }
+        .space {margin-right:16px;}
 
 /* ===================================================================== */
 
-.moving_box {
-  position:fixed; bottom:30px; right:30px; z-index:100;
-  width:50px; height:200px;
-}
-  .sns_box {
-    margin-bottom:10px; padding:5px; box-sizing:border-box; 
-    border-radius:10px;
-    width:50px; height:140px; background-color:#363636;
-  }
-  .sns_box > div {
-    margin-bottom:5px; background-color:#FAD000;
-    width:40px; height:40px; border-radius:10px;
-  }
-  .sns_box a {display:block; width:100%; height:100%;}
-  .raise_btn {
-    padding:5px;
-    width:50px; height:50px; background-color:#363636;
-    border-radius:100%;
-  }
-  .raise_btn button {
-    text-transform:uppercase;
-    display:block; width:40px; height:40px;
-    border-radius:100%;
-    background-color:#FAD000;
-  }
-  .raise_btn button:hover {background-color:#333;}
