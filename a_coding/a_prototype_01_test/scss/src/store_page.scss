@@ -1,0 +1,160 @@
+// store_page.scss
+
+#contentBox {
+  width:100%; height:auto;
+  min-height:600px;
+}
+
+.content_area {
+  width: 100%; height: auto;
+}
+
+.con_store_area {
+  width:100%; height: auto;
+  dl {
+    display:none;
+    width: 100%; height: auto;
+  
+    dt {
+      width: 100%; height:auto;
+      box-sizing:border-box;
+      border-top:1px solid var(--color-textGray);
+      border-bottom:1px solid var(--color-textGray);
+      padding:30px 0;
+  
+      div {
+        width: 320px; height: 60px;
+        margin:auto;
+        border-radius:10px;
+        font-size:30px;
+        text-transform:uppercase;
+        text-align:center;
+        line-height:60px;
+        color:var(--color-white);
+        background-color: var(--color-textGray);
+        background-image: url("../../image/head_background.jpg");
+      }
+    }
+  }
+}
+
+.storeSearch_con {
+  margin:50px auto;
+  width:1000px; height:auto;
+
+  .store_search {
+    display:flex;
+    width:100%; height:auto;
+    border-top:5px solid var(--color-yellow);
+    margin-bottom:40px;
+
+    > div {
+      width:50%; height:500px;
+      padding:20px; box-sizing:border-box;
+      border:1px solid var(--color-gray);
+      border-top:0;
+      &:first-child {border-right:0;}
+    }
+  }
+  .store_map > img {
+    display:block;
+    width:100%; height:100%;
+  }
+  span {
+    float:right;
+    line-height:30px; font-size:14px;
+    color:var(--color-red);
+  }
+}
+
+.store_imgArea {
+  
+  form {
+    width:100%; height:15%;
+    padding-top:20px; box-sizing:border-box;
+    
+    > div {
+      margin:auto;
+      padding-left:20px;
+      width:80%; height:auto;
+    }
+    label {color:var(--color-textGray)}
+    #searchText {
+      margin:0 10px 0 20px;
+      width:140px; height:24px;
+      border:1px solid var(--color-textGray);
+      background-color:#eee;
+    }
+    #searchBtn {
+      width:50px; height:28px;
+      background-color:var(--color-brown);
+      color:var(--color-yellow);
+      cursor:pointer;
+    }
+  }
+  > div {width:100%; height:40%}
+}
+.store_search > div > img {
+  width:100%; height:auto;
+  padding:20px; box-sizing:border-box;
+}
+.imgCheck_area { 
+  display:flex;
+  flex-wrap:wrap;
+  padding:0 30px;
+
+  > img {
+    display:block;
+    width:70px; height:70px;
+    margin:4px;
+    cursor:pointer;
+  }
+}
+
+.store_view {
+  width:100%; height:auto;
+  text-align:center;
+  color:var(--color-textGray);
+  border-top:5px solid var(--color-yellow);
+
+  td {
+    line-height: 30px;
+  }
+  td:nth-of-type(1) {width:8%;}
+  td:nth-of-type(2) {width:14%;}
+  td:nth-of-type(3) {width:50%;}
+  td:nth-of-type(4) {width:14%;}
+  td:nth-of-type(5) {width:14%; color:var(--color-darkGray);}
+  
+  .store_view_01 {
+    font-weight:600;
+    color:var(--color-darkGray);
+    background-color:var(--color-gray);
+  }
+
+  a:hover {text-decoration:underline;}
+}
+
+.view_number_btn {
+  display:flex;
+  margin:20px auto 50px auto;
+  width:50%; height:auto;
+
+  > button {
+    display:block;
+    margin-right:4px;
+    width:40px; height:30px;
+    background-color:var(--color-blue);
+
+    &:first-child {
+      color:var(--color-white);
+      background-color:var(--color-brown);
+    }
+  }
+}
+
+.bestFranchise_con {
+  margin:50px auto;
+  width:1000px; height:1000px;
+  font-size: 50px;
+}

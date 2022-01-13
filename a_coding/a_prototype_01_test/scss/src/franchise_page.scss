@@ -1,0 +1,355 @@
+// franchise_page.scss
+
+#contentBox {
+  width:100%; height:auto;
+  min-height:600px;
+}
+
+.content_area {
+  width: 100%; height: auto;
+}
+
+.con_franchise_area {
+  width:100%; height: auto;
+  dl {
+    display:none;
+    width: 100%; height: auto;
+  
+    dt {
+      width: 100%; height:auto;
+      box-sizing:border-box;
+      border-top:1px solid var(--color-textGray);
+      border-bottom:1px solid var(--color-textGray);
+      padding:30px 0;
+  
+      div {
+        width: 320px; height: 60px;
+        margin:auto;
+        border-radius:10px;
+        font-size:30px;
+        text-transform:uppercase;
+        text-align:center;
+        line-height:60px;
+        color:var(--color-white);
+        background-color: var(--color-textGray);
+        background-image: url("../../image/head_background.jpg");
+      }
+    }
+  }
+}
+
+.startUp_con {
+  margin:auto;
+  width:1000px; height:auto;
+  background-color: #fda;
+
+  > div {
+    width:100%; height:540px;
+    margin:50px 0;
+    background-image: url("../../image/sub_image/9.jpg");
+    background-repeat: no-repeat;
+    background-position:50% 50%;
+    background-size:cover;
+  }
+}
+.openCost_con {
+  margin:auto;
+  width:1000px; height:auto;
+  // background-color: #fda;
+
+  table {
+    width:100%; height:auto;
+    text-align:center;
+    color:#666666;
+
+    td {padding:7px;}
+
+    td:nth-of-type(1) {
+      background-color:var(--color-gray);
+    }
+  }
+
+  .table_1 {
+    font-size:16px; line-height:24px;
+    color:var(--color-white);
+    background-color:var(--color-brown);
+
+    > td:nth-child(1) {
+      width:15%;
+      background-color:var(--color-brown);
+    }
+    > td:nth-child(2) {width:50%;}
+    > td:nth-child(3) {width:15%;}
+    > td:nth-child(4) {width:20%;}
+  }
+
+  .table_2 > td:nth-child(3) {color:var(--color-red);}
+  .table_6 > td:nth-child(1) {background-color:var(--color-white);}
+
+  > p {padding:1px; background-color:var(--color-gray);}
+}
+.table_head {
+  display:flex;
+  width:100%; height:10%;
+  margin-top:50px;
+  
+  span {
+    display:block; height:100%;
+    box-sizing:border-box;
+    padding:12px;
+  }
+  span:nth-child(1) {
+    width:15%;
+    font-size:24px;
+    font-weight:600;
+    color:var(--color-brown);
+  }
+  span:nth-child(2) {
+    width:75%;
+    font-size:14px;
+    padding-top:24px;
+  }
+  span:nth-child(3) {
+    width:10%;
+    float:right;
+    font-size:14px;
+    padding-top:24px;
+  }
+}
+.cost_sum {
+  width:100%; height:auto;
+  margin:20px 0;
+  background-color:var(--color-yellow);
+
+  > div:first-child {
+    padding:5px 20px; box-sizing:border-box;
+    float:right;
+    > span {
+      font-weight:500;
+      text-transform: uppercase;
+      color:var(--color-brown);
+    }
+    > span:nth-child(2) {
+      font-size:30px;
+    }
+  }
+  .cost_line {
+    width:100%; height:5px;
+    float:right;
+    background-color:var(--color-brown);
+  }
+}
+.additional {
+  box-sizing:border-box;
+  padding-left:10px;
+  color:var(--color-brown);
+}
+.additional_1 {
+  width:100%; height:8%;
+  padding:10px; 
+  border:1px solid #ccc;
+  margin-bottom:10px;
+  background-color:var(--color-gray);
+}
+.additional_3 {margin-bottom:50px;}
+
+// =============================================================
+
+.interior_con {
+  position:relative;
+  margin:50px auto;
+  width:1000px; height:550px;
+  overflow:hidden;
+
+  > ul {
+    display:flex;
+    position:absolute;
+    left:0; top:0;
+    width:1000%; height:auto;
+    transition:500ms ease-out;
+  }
+  > ul > li {
+    width:10%; height:550px;
+  }
+  li:nth-child(1) {
+    background-image: url("../../image/sub_interior/interior_01.jpg");
+    background-repeat: no-repeat;
+    background-position:50% 50%;
+    background-size:cover;
+  }
+  li:nth-child(2) {
+    background-image: url("../../image/sub_interior/interior_02.jpg");
+    background-repeat: no-repeat;
+    background-position:50% 50%;
+    background-size:cover;
+  }
+  li:nth-child(3) {
+    background-image: url("../../image/sub_interior/interior_03.jpg");
+    background-repeat: no-repeat;
+    background-position:50% 50%;
+    background-size:cover;
+  }
+  li:nth-child(4) {
+    background-image: url("../../image/sub_interior/interior_04.jpg");
+    background-repeat: no-repeat;
+    background-position:50% 50%;
+    background-size:cover;
+  }
+  li:nth-child(5) {
+    background-image: url("../../image/sub_interior/interior_05.jpg");
+    background-repeat: no-repeat;
+    background-position:50% 50%;
+    background-size:cover;
+  }
+  li:nth-child(6) {
+    background-image: url("../../image/sub_interior/interior_06.jpg");
+    background-repeat: no-repeat;
+    background-position:50% 50%;
+    background-size:cover;
+  }
+  li:nth-child(7) {
+    background-image: url("../../image/sub_interior/interior_07.jpg");
+    background-repeat: no-repeat;
+    background-position:50% 50%;
+    background-size:cover;
+  }
+  li:nth-child(8) {
+    background-image: url("../../image/sub_interior/interior_08.jpg");
+    background-repeat: no-repeat;
+    background-position:50% 50%;
+    background-size:cover;
+  }
+  li:nth-child(9) {
+    background-image: url("../../image/sub_interior/interior_09.jpg");
+    background-repeat: no-repeat;
+    background-position:50% 50%;
+    background-size:cover;
+  }
+  > div {
+    position:absolute;
+    top:calc(50% - 30px); left:0;
+    width:100%; height:auto;
+  }
+  button {
+    display:block;
+    width:60px; height:60px;
+    background-color:var(--color-yellow);
+    font-size:40px; color:var(--color-brown);
+  }
+  .interior_prev_btn {
+    float:left;
+  }
+  .interior_next_btn {
+    float:right;
+  }
+}
+
+// =======================================================================
+
+.faq_con {
+  margin:50px auto;
+  width:1000px; height:auto;
+  div {
+    width:100%; height:auto;
+    padding:4px; box-sizing:border-box;
+    margin-bottom:30px;
+  }
+  div:last-child {
+    margin-bottom:0;
+  }
+  span {
+    display:block;
+    font-size:16px;
+  }
+  span:nth-of-type(1) {
+    font-size:18px; font-weight:600;
+  }
+  span:nth-of-type(2) {
+    padding:4px 20px;
+    line-height:26px;
+  }
+}
+
+// ==========================================================================
+
+.franchiseQ_con {
+  margin:50px auto;
+  width:1000px; height:auto;
+  // background-color: #fda;
+  color:var(--color-brown);
+  
+  form {padding-top:180px;}
+  fieldset {
+    font-size:16px;
+    padding:0 100px; box-sizing:border-box;
+    border:4px solid var(--color-brown);
+    &:last-of-type {
+      border:1px solid #bbb;
+      padding:40px 100px;
+      background-color:var(--color-gray);
+    }
+    > div {
+      line-height:60px;
+    }
+    label {font-size:18px;}
+    span {font-size:18px;}
+
+    input, textarea {
+      margin-left:6px;
+      font-size:16px;
+      border:1px solid #bbb;
+      border-radius:0;
+      background-color:var(--color-gray);
+    }
+  }
+  legend {
+    font-size:24px; line-height:40px;
+    font-weight:600;
+    padding:4px; box-sizing:border-box;
+    border:4px solid var(--color-brown);
+    background-color:var(--color-yellow);
+  }
+  
+  #nameText {width:200px; height:24px;}
+  #tel1 {margin-left:48px; width:50px; height:24px;}
+  #tel2 {margin-left:0; width:50px; height:24px;}
+  #tel3 {margin-left:0; width:50px; height:24px;}
+  #franchiseText {width:200px; height:24px;}
+  #franchiseYes {width:16px; height:16px;}
+  #franchiseNo {width:16px; height:16px;}
+  #franchiseQ {
+    float:left; 
+    margin-left:48px; margin-bottom:20px;
+    width:660px; height:100px;
+  }
+}
+
+.franchiseQ_text {
+  margin:50px auto;
+
+  div > span {margin-right:32px;}
+}
+.franchiseQ_title {
+  display:block; float:left; 
+}
+.franchiseQ_agree {
+  color:var(--color-textGray);
+  span {font-weight:600;}
+  p {font-size:12px; margin:10px 0;}
+  input {width:16px; height:16px;}
+}
+
+form > div {
+  width:100%; height:auto;
+
+  input {
+    display:block;
+    margin:50px auto;
+    font-size:20px;
+    width:20%; height:50px;
+    background-color:var(--color-brown);
+    color:var(--color-yellow);
+    cursor:pointer;
+  }
+  
+}

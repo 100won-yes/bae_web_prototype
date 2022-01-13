@@ -1,0 +1,99 @@
+// news_page.scss
+
+#contentBox {
+  width:100%; height:auto;
+  min-height:600px;
+}
+
+.content_area {
+  width: 100%; height: auto;
+}
+
+.con_news_area {
+  width:100%; height: auto;
+  dl {
+    display:none;
+    width: 100%; height: auto;
+  
+    dt {
+      width: 100%; height:auto;
+      box-sizing:border-box;
+      border-top:1px solid var(--color-textGray);
+      border-bottom:1px solid var(--color-textGray);
+      padding:30px 0;
+  
+      div {
+        width: 320px; height: 60px;
+        margin:auto;
+        border-radius:10px;
+        font-size:30px;
+        text-transform:uppercase;
+        text-align:center;
+        line-height:60px;
+        color:var(--color-white);
+        background-color: var(--color-textGray);
+        background-image: url("../../image/head_background.jpg");
+      }
+    }
+  }
+}
+
+// =============================================================================
+
+.mediaReports_con {
+  margin:50px auto;
+  width:1000px; height:auto;
+  color:var(--color-brown);
+
+  .mediaReports_table_01 {
+    background-color:var(--color-blue);
+    color:var(--color-darkGray);
+    font-weight:600;
+
+    > td {
+      line-height:50px; text-align:center;
+    }
+  }
+  table {
+    border-left:0; border-right:0;
+    td:nth-of-type(1) {width:8%; text-align:center;}
+    td:nth-of-type(2) {width:60%;}
+    td:nth-of-type(3) {width:16%; text-align:center;}
+    td:nth-of-type(4) {width:8%; text-align:center;}
+    td:nth-of-type(5) {width:8%; text-align:center;}
+  }
+  tbody {border-left:0; border-right:0;}
+  tr {border-left:0; border-right:0;}
+  td {border:0;}
+
+  a {
+    line-height:30px;
+
+    &:hover {text-decoration: underline;}
+  }
+}
+
+.mediaReports_btn {
+  display:flex;
+  margin:30px auto;
+  width:36%; height:auto;
+
+  > button {
+    display:block;
+    margin-right:4px;
+    width:40px; height:30px;
+    background-color:var(--color-blue);
+
+    &:first-child {
+      color:var(--color-white);
+      background-color:var(--color-brown);
+    }
+  }
+}
+// =============================================================================
+
+.notice_con {
+  margin:auto;
+  width:1000px; height:1000px;
+  font-size:50px;
+}

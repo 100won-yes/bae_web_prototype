@@ -21,4 +21,23 @@
 .clearfix:after,
 .clearfix::after{content:""; display: block; clear:both;}
 
+.content_area > div > .on {display:block;}
+
 #wrap {margin:auto;}
+
+/* variable */
+
+:root {
+  --color-yellow:#FAD000;
+  --color-darkGray:#363636;
+  --color-white:#ffffff;
+  --color-textGray:#919191;
+  --color-brown:#3C2416;
+  --color-brownOpacity:rgba(60, 36, 22,0.5);
+  --color-halfBlock:rgba(54, 54, 54,0.5);
+  --color-halfWhite:rgba(255, 255, 255,0.5);
+  --color-gray:#E4E4E4;
+  --color-blue:#A6BEE0;
+  --color-pink:#F47ACB;
+  --color-red:#E05158;
+}

@@ -1,0 +1,109 @@
+/* menu_laptop.css */
+
+/* width:1280px ~ 1439px / design 기준 : 1280px */
+@media all and (min-width:1280px) and (max-width:1439px) {
+
+  
+  
+  /* #contentBox =================================================== */
+  
+  #contentBox {
+    width:100%; height:auto;
+    min-height:600px;
+  }
+    .content_area {
+      width: 100%; height: auto;
+    }
+      .con_menu_area {
+        width:100%; height: auto;
+      }
+      .con_menu_area > dl {
+        display:none;
+        width: 100%; height: auto;
+      }
+      .con_menu_area >.on {display:block;}
+      .con_menu_area > dl > dt {
+        width: 100%; height:auto;
+        box-sizing:border-box;
+        border-top:1px solid var(--color-textGray);
+        border-bottom:1px solid var(--color-textGray);
+        padding:30px 0;
+      }
+      .con_menu_area > dl > dt > div {
+        width: 320px; height: 60px;
+        margin:auto;
+        border-radius:10px;
+        font-size:30px;
+        text-transform:uppercase;
+        text-align:center;
+        line-height:60px;
+        color:var(--color-white);
+        background-color: var(--color-textGray);
+        background-image: url("../../image/head_background.jpg");
+      }
+      .con_menu_area > dl > dd {
+        display:flex;
+        justify-content:center;
+        width:100%; height:auto;
+      }
+      .con_menu_area > dl ul {
+        display:flex;
+        flex-wrap:wrap;
+        width:auto; height:auto;
+        max-width:1000px;
+      }
+      .con_menu_area > dl li {
+        width:200px; height:250px;
+        margin:25px;
+      }
+
+        .product_btn > span {display:block;}
+  
+          .product_imgBox {
+            width:200px; height:200px;
+            transition:all 500ms linear;
+  
+          }
+          .product_imgBox img {
+            width:150px; height:150px;
+            margin:25px;
+            border-radius:10px;
+            transition:all 500ms linear;  
+            /* box-shadow:1px 1px 1px #eee; */
+          }
+          .product_textBox {
+            width:200px; height:50px;
+            /* background-color: #888; */
+            text-transform:uppercase;
+            color:var(--color-darkGray);
+            line-height:50px;
+          }
+          .product_textBox > span {
+            padding:2px 10px;
+            margin-right:5px;
+            border-radius:10px;
+            font-weight:600;
+            color:var(--color-white);
+          }
+  
+          .con_menu_area button {
+            width:200px; height:250px;
+          }
+          .con_menu_area button:hover .product_imgBox{
+            transform:scale(1.1);
+          }
+          .con_menu_area button:focus img{
+            transform:scale(1.1);
+          }
+  
+          .hot_text {background-color:var(--color-red);}
+          .ice_text {background-color:var(--color-blue);}
+          .new_text {background-color:var(--color-yellow);}
+          .best_text {background-color:var(--color-pink);}
+
+  
+}
+
+
+
+

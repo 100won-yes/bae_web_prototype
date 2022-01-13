@@ -1,0 +1,470 @@
+/* main_tablet.css */
+
+/* width:768px ~ 1279px / design 기준 : 768px */
+@media all and (min-width:768px) and (max-width:1279px) {
+  
+
+  /* #mainAdBox ==================================================== */
+
+  #mainAdBox {
+    width:100%; height:auto;
+    margin:auto;
+    margin-top:100px;
+  }
+  .mainAdBox_area {
+    position:relative;
+    width:100%; height:700px;
+    overflow:hidden;
+  }
+  .mainAdBox_area > ul {
+    position:absolute;
+    left:0; top:0;
+    width:500%; height:auto;
+    transition:500ms ease-out;
+  }
+  .mainAdBox_area > ul > li {
+    float:left;
+    width:20%; height:700px;
+  }
+  .mainAdBox_area > ul > li:nth-child(1) {
+    background-image: url("../../image/main_page/mainAd_01.jpg");
+    background-repeat: no-repeat;
+    background-position:50% 50%;
+    background-size:cover;
+  }
+  .mainAdBox_area > ul > li:nth-child(2) {
+    background-image: url("../../image/main_page/mainAd_02.jpg");
+    background-repeat: no-repeat;
+    background-position:50% 50%;
+    background-size:cover;
+  }
+  .mainAdBox_area > ul > li:nth-child(3) {
+    background-image: url("../../image/main_page/mainAd_03.jpg");
+    background-repeat: no-repeat;
+    background-position:50% 50%;
+    background-size:cover;
+  }
+  .mainAdBox_area > ul > li:nth-child(4) {
+    background-image: url("../../image/main_page/mainAd_04.jpg");
+    background-repeat: no-repeat;
+    background-position:50% 50%;
+    background-size:cover;
+  }
+  .mainAdBox_area > ul > li:nth-child(5) {
+    background-image: url("../../image/main_page/mainAd_05.jpg");
+    background-repeat: no-repeat;
+    background-position:50% 50%;
+    background-size:cover;
+  }
+    .indicator_box {
+      position:absolute;
+      left:calc(50% - 85px); bottom:30px;
+      width:auto; height:auto;
+    }
+    .indicator_box li {
+      float:left; margin-right:10px;
+      border-radius:100%;
+      width:26px; height:26px; background-color:var(--color-darkGray);
+    }
+    .indicator_box li:hover {background-color:var(--color-yellow);}
+    .indicator_box li:last-child {margin:0;}
+
+    .mainAd_btn_box {
+      position:absolute;
+      top:calc(50% - 30px); left:0;
+      width:100%; height:auto;
+    }
+    .mainAd_btn_box > div > button {
+      width:60px; height:60px;
+    }
+      .mainAd_prev_button {float:left;}
+      .mainAd_next_button {float:right;}
+      .mainAd_btn_box i {font-size:50px; color:var(--color-yellow);}
+  /* #menuBox ====================================================== */
+
+  #menuBox {
+    width:100%; height:760px; background-color:var(--color-gray);
+  }
+    .menu_inner {
+      margin:auto;
+      margin-top:90px;
+      width:940px; height:580px;
+    }
+    .menu_inner > ul {
+      width:auto; height:auto;
+    }
+    .menu_inner > ul > li {
+      float:left;
+      transition:all 300ms linear;
+    }
+    .menu_inner_area > li > div {
+      width:100%; height:100%;
+      box-shadow:5px 5px 5px;
+    }
+    .menu_inner_area a {display:block; width:100%; height:100%;}
+    .menu_inner_area a div {
+      padding:40px 0 0 40px; 
+      width:100%; height:100%; background-color:#fdb;
+    }
+    .menu_inner h3 {
+      width:100%;
+      font-size:1.5rem; text-transform:uppercase; 
+      background-color: rgba(228, 228, 228,0.5); 
+      border-radius:5px 0 0 5px; padding-left:5px;
+    }
+    .menu_inner li:hover {transform:scale(1.02);}
+      .brandstory {
+        margin-bottom:20px; margin-right:20px;
+        width:300px; height:280px;
+      }
+        .brandstory_box {width:100%; height:100%;}
+      
+      .menu {
+        margin-bottom:20px;
+        width:620px; height:280px;
+      }
+      .franchise {
+        margin-right:20px;
+        width:300px; height:280px;
+      }
+      .store {
+        margin-right:20px;
+        width:300px; height:280px;
+      }
+      .news {width:300px; height:280px;}
+
+      .brandstory_box div {
+        background-image: url("../../image/main_page/menu1.png");
+        background-repeat: no-repeat;
+        background-position:50% 50%;
+        background-size:cover;
+      }
+      .menu_box div {
+        background-image: url("../../image/main_page/menu2.png");
+        background-repeat: no-repeat;
+        background-position:50% 50%;
+        background-size:cover;
+      }
+      .franchise_box div {
+        background-image: url("../../image/main_page/menu3.png");
+        background-repeat: no-repeat;
+        background-position:50% 50%;
+        background-size:cover;
+      }
+      .store_box div {
+        background-image: url("../../image/main_page/menu4.png");
+        background-repeat: no-repeat;
+        background-position:50% 50%;
+        background-size:cover;
+      }
+      .news_box div {
+        background-image: url("../../image/main_page/menu5.png");
+        background-repeat: no-repeat;
+        background-position:50% 50%;
+        background-size:cover;
+      }
+
+  
+  /* #newproductBox ================================================= */
+
+  #newproductBox {
+    width:100%; height:auto;
+    background-image: url("../../image/main_page/newBest.jpg");
+    background-repeat: no-repeat;
+    background-position:50% 50%;
+    background-size:cover;
+  }
+  #newproductBox > div {
+    width:auto; height:560px;
+    background-color:var(--color-halfBlock);
+  }
+      .newproduct_area {
+        margin:auto; margin-top:120px;
+        width:240px; height:auto;
+        color:var(--color-yellow);
+      }
+        .newproduct_title {
+          text-align:center;
+          font-size:2.5rem; text-transform:uppercase;
+          width:240px; height:60px;
+        }
+        .newproduct_text {
+          text-align:center;
+          font-size:1.5rem;
+          margin:45px 0;
+          width:240px; height:110px;
+        }
+        .newproduct_area > div {
+          margin:auto;
+          width:140px; height:60px;
+        }
+        .newproduct_area button {
+          display:block; font-size:1.25rem;
+          color:var(--color-brown);
+          width:100%; height:100%;
+          font-weight:800;
+          background-color:var(--color-yellow);
+          border:2px solid var(--color-brown);
+          border-radius:10px;
+          transition:all 300ms linear;
+        }
+        .newproduct_area button:hover {
+          color:var(--color-yellow);
+          background-color:var(--color-brown);
+        }
+
+  /* #introductionBox ================================================= */
+
+  #introductionBox {
+    position:relative; 
+    padding:40px 0;
+    width:100%; height:480px; background-color:var(--color-brown);
+  }
+    .introduction_inner {
+      position:relative; 
+      /* left:calc(50% - 1520px); */
+      margin:auto; width:100%; height:400px;
+    }
+    .introduction_inner > li {
+      box-shadow:5px 5px 5px;
+      margin:auto;
+      width:800px; height:400px;
+    }
+    .introduction_inner > li:nth-child(1) {
+      background-image: url("../../image/main_page/introduction_01.jpg");
+      background-repeat: no-repeat;
+      background-position:50% 50%;
+      background-size:cover;
+    }
+    .introduction_inner > li:nth-child(2) {
+      background-image: url("../../image/main_page/introduction_02.jpg");
+      background-repeat: no-repeat;
+      background-position:50% 50%;
+      background-size:cover;
+    }
+    .introduction_inner > li:nth-child(3) {
+      background-image: url("../../image/main_page/introduction_03.jpg");
+      background-repeat: no-repeat;
+      background-position:50% 50%;
+      background-size:cover;
+    }
+    .introduction_inner > li:nth-child(4) {
+      background-image: url("../../image/main_page/introduction_04.jpg");
+      background-repeat: no-repeat;
+      background-position:50% 50%;
+      background-size:cover;
+    }
+
+    .introduction_btn_box {
+      position:absolute; 
+      top:calc(50% - 30px); left:0; right:0;
+      margin:auto;
+      width:950px; height:60px;
+    }
+    .introduction_btn_box > div {
+        width:auto; height:auto;
+      }
+      .introduction_btn_box button {
+        width:60px; height:60px;
+      }
+      .introduction_prev_button {float:left;}
+      .introduction_next_button {float:right;}
+      .introduction_btn_box i {font-size:50px; color:var(--color-yellow);}
+  /* #subAdBox_01 ===================================================== */
+
+  #subAdBox_01 {
+    padding:22px 0;
+    width:100%; height:auto; background-color:var(--color-white);
+  }
+    .sub_inner_01 {
+      margin:auto;
+      width:900px; height:225px;
+      background-image: url("../../image/main_page/line_banner.jpg");
+      background-repeat: no-repeat;
+      background-position:50% 50%;
+      background-size:cover;
+    }
+
+  /* #subAdBox_02 ===================================================== */
+
+  #subAdBox_02 {
+    width:100%; height:auto;
+    background-image: url("../../image/main_page/interior.jpg");
+    background-repeat: no-repeat;
+    background-position:50% 50%;
+    background-size:cover;
+  }
+  #subAdBox_02 > div {
+    padding:30px 0;
+    width:100%; height:auto;
+    background-color:var(--color-halfBlock);
+  }
+    .sub_inner_02 {
+      color:var(--color-yellow);
+      margin:auto;
+      width:240px; height:auto;
+    }
+      .sub_02_title {
+        margin:auto;
+        font-size:2.5rem; text-transform:uppercase;
+        text-align:center;
+        width:200px; height:60px;
+      }
+      .sub_02_text {
+        font-size:1.5rem;
+        text-align:center;
+        margin:15px 0;
+        width:240px; height:110px;
+      }
+      .sub_02_area > div {
+        margin:auto;
+        width:140px; height:60px;
+      }
+      .sub_02_area button {
+        display:block; font-size:1.25rem;
+        font-weight:800;
+        color:var(--color-brown);
+        width:100%; height:100%;
+        background-color:var(--color-yellow);
+        border-radius:10px;
+        transition:all 300ms linear;
+      }
+      .sub_02_area button:hover {
+        color:var(--color-yellow); 
+        background-color:var(--color-brown);
+      }
+
+  /* #subAdBox_03 ===================================================== */
+
+  #subAdBox_03 {width:100%; height:600px; background-color:var(--color-brown);}
+    .sub_inner_03 {
+      width:100%; height:100%;
+    }
+    .sub_inner_03_area {
+      margin:auto;
+      margin-top:100px;
+      width:900px; height:400px;
+    }
+    .sub_inner_03_area > div {float:left;}
+      .sub_inner_03_textBox {
+        padding:40px 30px; box-sizing:border-box;
+        width:300px; height:400px;
+        color:var(--color-brown);
+        background-color:var(--color-yellow);
+      }
+        .sub_03_title {
+          font-size:2.5rem; text-transform:uppercase;
+          width:140px; height:60px;
+        }
+        .sub_03_text {
+          font-size:1.5rem;
+          margin:30px 0;
+          width:240px; height:140px;
+        }
+        .sub_03_area > div {
+          width:140px; height:60px;
+        }
+        .sub_03_area button {
+          display:block; font-size:1.25rem;
+          color:var(--color-yellow);
+          width:100%; height:100%;
+          font-weight:800;
+          background-color:var(--color-brown);
+          border:2px solid var(--color-brown);
+          border-radius:10px;
+          transition:all 300ms linear;
+        }
+        .sub_03_area button:hover {
+          color:var(--color-brown); 
+          background-color:var(--color-yellow);
+        }
+      .sub_inner_03_imgBox {
+        width:600px; height:400px;
+        background-image: url("../../image/main_page/slide_interior.png");
+        background-repeat: no-repeat;
+        background-position:50% 50%;
+        background-size:cover;
+      }
+
+  
+}
+
+@media all and (min-width:768px) and (max-width:1000px) {
+
+  .mainAdBox_area > ul > li {height:600px;}
+
+  #menuBox {
+    width:100%; height:500px;
+  }
+    .menu_inner {
+      margin:auto;
+      margin-top:60px;
+      width:640px; height:380px;
+    }
+    .menu_inner_area a div {
+      padding:30px 0 0 30px; 
+    }
+    .menu_inner h3 {font-size:1.25rem;}
+      .brandstory {
+        margin-bottom:20px; margin-right:20px;
+        width:200px; height:180px;
+      }
+      .menu {
+        margin-bottom:20px;
+        width:420px; height:180px;
+      }
+      .franchise {
+        margin-right:20px;
+        width:200px; height:180px;
+      }
+      .store {
+        margin-right:20px;
+        width:200px; height:180px;
+      }
+      .news {width:200px; height:180px;}
+
+  #newproductBox > div {height:400px;}
+      .newproduct_area {margin-top:40px;}
+
+  #introductionBox {
+    padding:20px 0;
+    height:340px;
+  }
+    .introduction_inner {height:300px;}
+    .introduction_inner > li {
+      width:600px; height:300px;
+    }
+    .introduction_btn_box {
+      width:750px; height:60px;
+    }
+  #subAdBox_01 {padding:15px 0;}
+    .sub_inner_01 {
+      width:600px; height:150px;
+    }
+  #subAdBox_02 {padding:10px 0;}
+  #subAdBox_03 {height:400px;}
+    .sub_inner_03_area {
+      margin-top:70px;
+      width:600px; height:260px;
+    }
+    .sub_inner_03_area > div {float:left;}
+      .sub_inner_03_textBox {
+        padding:5px 5px; 
+        width:200px; height:260px;
+      }
+        .sub_03_title {
+          font-size:2.25rem;
+          width:140px; height:60px;
+        }
+        .sub_03_text {
+          font-size:1.25rem;
+          margin:5px 0;
+          width:180px; height:120px;
+        }
+        .sub_03_area > div {
+          width:140px; height:60px;
+        }
+      .sub_inner_03_imgBox {
+        width:400px; height:260px;
+      }
+  }

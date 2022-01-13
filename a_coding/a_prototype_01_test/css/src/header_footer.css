@@ -1,0 +1,7 @@
+@charset "UTF-8";
+/* header_footer.css */
+
+@import url("../responsive_header_footer/header_footer_pc.css");
+@import url("../responsive_header_footer/header_footer_laptop.css");
+@import url("../responsive_header_footer/header_footer_tablet.css");
+@import url("../responsive_header_footer/header_footer_smartphone.css");

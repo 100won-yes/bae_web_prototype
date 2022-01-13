@@ -1,0 +1,227 @@
+#contentBox {
+  width: 100%;
+  height: auto;
+  min-height: 600px;
+}
+
+.content_area {
+  width: 100%;
+  height: auto;
+}
+
+.con_brandstory_area {
+  width: 100%;
+  height: auto;
+}
+.con_brandstory_area dl {
+  display: none;
+  width: 100%;
+  height: auto;
+}
+.con_brandstory_area dl dt {
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  border-top: 1px solid var(--color-textGray);
+  border-bottom: 1px solid var(--color-textGray);
+  padding: 30px 0;
+}
+.con_brandstory_area dl dt div {
+  width: 320px;
+  height: 60px;
+  margin: auto;
+  border-radius: 10px;
+  font-size: 30px;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 60px;
+  color: var(--color-white);
+  background-color: var(--color-textGray);
+  background-image: url("../../image/head_background.jpg");
+}
+.con_brandstory_area dl dd {
+  width: 100%;
+  height: auto;
+}
+.con_brandstory_area dl dd > div {
+  width: 1000px;
+  margin: auto;
+}
+
+.companyIntro_con > div {
+  margin: 60px 0;
+}
+
+.logo_image_area > ul {
+  display: flex;
+  width: 100%;
+  height: auto;
+}
+.logo_image_area > ul > li {
+  width: 333.3333333333px;
+  height: 200px;
+  border: 1px solid #aaa;
+  border-right: 0px;
+  box-sizing: border-box;
+}
+.logo_image_area > ul > li:last-child {
+  border-right: 1px solid #aaa;
+}
+.logo_image_area > ul > li > div {
+  width: 100%;
+}
+.logo_image_area > ul > li > div:first-child {
+  height: 80%;
+}
+.logo_image_area > ul > li > div:last-child {
+  height: 20%;
+  background-color: #fdd;
+}
+
+.logo_image_area {
+  width: 100%;
+  height: 200px;
+}
+
+.logo_image_1 > div:first-child {
+  background-image: url("../../image/sub_image/1.PNG");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+.logo_image_1 > div:last-child {
+  background-image: url("../../image/sub_image/5.PNG");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+.logo_image_2 > div:first-child {
+  background-image: url("../../image/sub_image/2.PNG");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+.logo_image_2 > div:last-child {
+  background-image: url("../../image/sub_image/6.PNG");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+.logo_image_3 > div:first-child {
+  background-image: url("../../image/sub_image/3.PNG");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+.logo_image_3 > div:last-child {
+  background-image: url("../../image/sub_image/7.PNG");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+.logo_text_area {
+  width: 100%;
+  height: 330px;
+}
+.logo_text_area div {
+  width: 850px;
+  height: auto;
+  margin: auto;
+}
+.logo_text_area p {
+  margin: auto;
+  font-size: 18px;
+  color: #7E7E7E;
+  margin-bottom: 40px;
+}
+.logo_text_area p:last-child {
+  float: right;
+  color: #8B725C;
+  margin-bottom: 0;
+}
+
+.shop_image {
+  width: 100%;
+  height: 240px;
+  border: 1px solid #777;
+  background-image: url("../../image/sub_image/4.PNG");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+.brandIntro_con {
+  margin: auto;
+  width: 1000px;
+  height: auto;
+}
+.brandIntro_con > div {
+  width: 100%;
+  height: 1050px;
+  margin: 50px 0;
+  background-image: url("../../image/sub_image/5.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+.vision_con {
+  width: 1000px;
+  height: auto;
+}
+.vision_con > div {
+  width: 100%;
+  height: 580px;
+  margin: 50px 0;
+  background-image: url("../../image/sub_image/6.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+.bi_con {
+  width: 1000px;
+  height: auto;
+  background-color: #fad;
+}
+.bi_con > div {
+  width: 100%;
+  height: 1280px;
+  margin: 50px 0;
+  background-image: url("../../image/sub_image/7.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+.directions_con {
+  width: 1000px;
+  height: auto;
+}
+.directions_con > div:first-child {
+  width: 100%;
+  height: 440px;
+  margin-top: 50px;
+  background-color: #fda;
+}
+.directions_con > div:last-child {
+  width: 800px;
+  height: 80px;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  box-sizing: border-box;
+  padding: 40px;
+  background-image: url("../../image/sub_image/8.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+/*# sourceMappingURL=brandstory_page.css.map */
